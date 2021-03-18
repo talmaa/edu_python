@@ -70,3 +70,57 @@ b = ("azz" > "bbb")
 c = ("Z" > "a")
 d = ("가" < "힣")
 print(a, b, c, d)
+'''
+num = int(input("숫자입력 > "))
+if num % 2 == 0 :
+    print("짝수입니다.")
+else :
+    print("홀수입니다.")
+
+if   num % 3 == 0 :
+    print("나머지가 0입니다.")
+elif num % 3 == 1 :
+    print("나머지가 1입니다.")
+else :
+    print("나머지가 2입니다.")
+'''
+'''
+score = int(input("점수입력 > "))
+# 점수가 70 이상 'C', 80 이상 'B', 90 이상 'A', 60 이상 'D', 60 미만이면 'F'
+# 각 학점 별 5이상은 '+'를 줌
+if score >= 90 :
+    print("A")
+elif score >= 80 :
+    print("B")
+elif score >= 70 :
+    print("C")
+elif score >= 60 :
+    print("D")
+else :
+    print("F")
+
+if 90 <= score <= 100 :
+    print("A")
+elif 80 <= score < 90 :
+    print("B")
+elif 70 <= score < 80 :
+    print("C")
+elif 60 <= score < 70 :
+    print("D")
+else :
+    print("F")
+'''
+
+x = 10
+y = 5
+
+if x > 5: 
+    if y> 3 :
+        print("yes")
+    else :
+        print("??")
+else :
+    print("no")
+
+lst_a = [273, 32, 103, "문자열", True, False]
+print(lst_a)
