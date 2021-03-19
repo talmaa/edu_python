@@ -70,7 +70,7 @@ b = ("azz" > "bbb")
 c = ("Z" > "a")
 d = ("가" < "힣")
 print(a, b, c, d)
-'''
+
 num = int(input("숫자입력 > "))
 if num % 2 == 0 :
     print("짝수입니다.")
@@ -83,8 +83,7 @@ elif num % 3 == 1 :
     print("나머지가 1입니다.")
 else :
     print("나머지가 2입니다.")
-'''
-'''
+
 score = int(input("점수입력 > "))
 # 점수가 70 이상 'C', 80 이상 'B', 90 이상 'A', 60 이상 'D', 60 미만이면 'F'
 # 각 학점 별 5이상은 '+'를 줌
@@ -109,7 +108,7 @@ elif 60 <= score < 70 :
     print("D")
 else :
     print("F")
-'''
+
 
 x = 10
 y = 5
