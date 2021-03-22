@@ -20,3 +20,5 @@
     * 딕셔너리 
 * 6일차(_function.txt 참조)
     * 딕셔너리 데이터 삭제
+    * datetime 모듈
+    * for문 응용
