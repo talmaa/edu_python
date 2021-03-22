@@ -168,9 +168,36 @@ lst_a[0] -> 273,  lst_a[3] -> "문자열", lst_a[-1] -> False
  - 딕셔너리에 새로운 데이터를 추가하려면 키와 값의 쌍으로 입력해야 함
    문법 : 딕셔너리[추가할 키] = 추가할 값
    dic2["age"] = 33
+   # 추가한 값은 딕셔너리의 가장 뒤에 추가됨
 
    dic2["name"] = "전우치"
    기존의 존재하는 키와 동일한 키를 추가할 경우 기존의 키에 덮어쓰기가 이루어 짐
+
+딕셔너리에서 값 삭제
+ - del 명령을 이용하여 삭제할 키를입력하면 됨
+ - 문법 : del 딕셔너리[삭제할 키]
+ 예) del dic2["job"]
+    dic2에서 "job"이라는 키를 가진 데이터 삭제
+    print(dic2)
+    {'name': '전우치', 'address': ['울릉도', '제주도', '함경도'], 'age': 33}
+
+    del dic2["job"]
+    존재하지 않는 키를 삭제할 경우 KeyError 발생
+
+ 특정 키의 존재 여부를 검사
+  - in 명령어
+      리스트내 특정 값이 있는지 여부를 감사할 때 사용한 in명령은 딕셔너리에서도 사용 가능
+      문법 : 키 in 딕셔너리 -> 키의 존재여부에 따라 논리값 리턴
+
+  - get() 함수
+      딕셔너리 내의 데이터를 추출하는 함수로 존재하지 않는 키를 사용해도 오류를 발생시키지 않음
+      문법 : 딕셔너리.get(키) -> 존재하는 키면 키에 해당하는 값을, 존재하지 않으면 None을 리턴
+    예) 
+      # if dic2.get("address") is not None :
+      if dic2.get("address") != None :
+          print(dic2["address"])
+      else : 
+          print("존재하지 않는 키입니다.")
 
  제어문
   - 프로그램은 기본적으로 위에서 아래로, 왼쪽에서 오른쪽으로 실행이 되며, 그 순서를
@@ -228,6 +255,46 @@ if 조건1 :
   for i in range(len(lst)) : # lst 리스트이 모든 데이터를 차례대로 출력(for문 이용)
     print(lst[i])
     # ab cd ef gh ij
+
+  - range() 함수
+      매개변수의 개수에 따라 동작되는 방법이 달라지는 함수
+      문법
+      range(횟수) : 0부터 횟수 -1 까지 지정한 횟수를 루프를 돌림
+      range(시작인덱스, 종료인덱스) : 시작인덱스 부터 종료인덱스 -1 까지 지정한 횟수를 루프를 돌림
+        - 시작 인덱스 번호를 지정할 수 있음
+      range(시작인덱스, 종료인덱스, 증감) : 시작인덱스 부터 종료인덱스 -1 까지 인덱스 '증감' 만큼 띄어서 루프를 돌림
+        - 시작인덱스와 종료인덱스 외에 증감분을 지정할 수 있음
+
+      예)
+      lst = ["a", "b", "c", "d", "e", "f", "g", "h", "i", "j", "k"]
+      print("-----------------------")
+      # 리스트 전체 출력 : index 0 ~ lst length -1
+      for i in range(len(lst)) :
+          print(lst[i])
+          # a b c d e f g h i j k
+      print("-----------------------")
+      # 리스트 c부터 h까지 출력 : index 2 ~ lst length -3
+      for i in range(2, len(lst) - 3) :
+          print(lst[i])
+          # c d e f g h
+
+      print("-----------------------")
+      # 리스트 a부터 2씩 증가하여 마지막까지 출력 : index 0, 2, 4, .. , lst length -1
+      for i in range(0, len(lst), 2) :
+          print(lst[i])
+          # a c e g i k
+
+      print("-----------------------")
+      # 리스트 k부터 a까지 역순으로 출력
+      for i in range(len(lst), 0, -1) :
+          print(lst[i - 1])
+          # k j i h g f e d c b a
+
+      print("-----------------------")
+      # 리스트 k부터 a까지 역순으로 출력(reversed 함수 사용)
+      for i in reversed(range(len(lst))) :
+          print(lst[i])
+          # k j i h g f e d c b a
 
   예) 방법2. 리스트라는 객체와 함께 사용하는 방법
   for 변수 in 리스트 :
