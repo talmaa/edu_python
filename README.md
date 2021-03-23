@@ -22,3 +22,7 @@
     * 딕셔너리 데이터 삭제
     * datetime 모듈
     * for문 응용
+* 7일차(_function.txt 참조)
+    * while 문
+    * break, continue
+    * 문자열, 리스트, 딕셔너리에 관련된 기본 함수들
