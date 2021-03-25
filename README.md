@@ -26,6 +26,11 @@
     * while 문
     * break, continue
     * 문자열, 리스트, 딕셔너리에 관련된 기본 함수들
-
-* 7일차(_function.txt 참조)
+* 8일차(_user_def_function.txt 참조)
     * 사용자 정의 함수
+* 9일차(_user_def_function.txt 참조)
+    * 튜플
+
+## License
+
+The mighty MIT license. Please check `LICENSE` for more details.
