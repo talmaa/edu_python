@@ -30,6 +30,11 @@
     * 사용자 정의 함수
 * 9일차(_user_def_function.txt 참조)
     * 튜플
+* 10일차(_user_def_function.txt 참조)
+    * 람다식
+    * 파일 I/O
+* 11일차(_exception.txt, module.txt 참조)
+    * 예외처리
 
 ## License
 
