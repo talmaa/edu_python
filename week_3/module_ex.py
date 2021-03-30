@@ -39,3 +39,33 @@ while len(s1) != 6 :
 l1 = list(s1)
 l1.sort()
 print(l1)
+
+import datetime as d
+
+now = d.datetime.now()
+print(now)
+
+after = now + d.timedelta(days=5)
+print(after)
+
+before = now - d.timedelta(weeks=2)
+print(before)
+
+re1 = now.replace(year = 2022)
+print(re1)
+
+# now의 날짜에서 1년 후의 날짜를 출력
+re2 = now.replace(year = now.year + 1)
+print(re2)
+
+import time
+print("지금부터 5초간 멈춤")
+time.sleep(5)
+print("다시 시작")
+
+import urllib.request as req
+
+target = req.urlopen("http://www.naver.com/")
+output = target.read()
+#print(output)
+

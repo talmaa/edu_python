@@ -35,6 +35,9 @@
     * 파일 I/O
 * 11일차(_exception.txt, module.txt 참조)
     * 예외처리
+* 12일차(module.txt 참조)
+    * 파이썬 내장 모듈
+    * 클래스
 
 ## License
 
